@@ -1,4 +1,5 @@
- while IFS=, read col1 col2 remainder
+  while IFS=, read col1 col2 remainder
  do	
- 	wget "$col2"
+ 	cd "downloads"
+	wget "$col2"
  done < "submissions.csv"
